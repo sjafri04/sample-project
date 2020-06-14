@@ -1,37 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, View, SectionList } from 'react-native';
+import ContactSection from './contactsection';
 
-export default ContactBook = () => {
+
+export default App = () => {
   return (
-    <View style={{paddingTop: "50%"}}>
-
-        <SectionList
-            sections={[
-                {title: 'A', data: ['Abbas', 'Adam', 'Aidan']},
-                {title: 'D', data: ['Dad', 'Danish', 'Dylan']},
-                {title: 'K', data: ['Karen', 'Kenny', 'Kevin']},
-            ]}
-            renderItem={({item}) => <Text style= {styles.item}>{item}</Text>}
-            renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
-            keyExtractor={(item, index) => index}
-        />
+    <View style={styles.container}>
+        <ContactSection/>
     </View>
     );
 }
 
 const styles = StyleSheet.create({
-  sectionHeader: {
-    paddingTop: 2,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingBottom: 2,
-    fontSize: 14,
-    fontWeight: 'bold',
-    backgroundColor: 'rgba(247,247,247,1.0)',
-  },
-  item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
-  },
+    container: {
+        backgroundColor: "white",
+        paddingTop:"50%"
+    }
+
 })
