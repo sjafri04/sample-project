@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, SectionList } from 'react-native';
 export default ContactSection = () => {
     return(
     <View>
-        <Text> bru </Text>
+        <Text> Humble Beginnings </Text>
         <SectionList
             sections={[
                 {title: 'A', data: ['Abbas', 'Adam', 'Aidan']},
