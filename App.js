@@ -1,22 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View, SectionList, Image } from 'react-native';
 import ContactSection from './contactsection';
-import ContactSearch from './contactsearch';
+import ContactSearch from './contactsearchV2';
 
 const contactData = [
 	{
 		name: "Shan Jafri",
-		LastConacted: "Two days ago",
+		LastContacted: "Two days ago",
 	},
 
 	{
 		name: "Mohib Jafri",
-		LastConacted: "5 months ago",
+		LastContacted: "5 months ago",
 	},
 
 	{
 		name: "Mohammed Jafri",
-		LastConacted: "One minute ago",
+		LastContacted: "One minute ago",
 	},
 ]
 
